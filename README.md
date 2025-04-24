@@ -1,46 +1,89 @@
-# Getting Started with Create React App
+# Real-Time Crypto Price Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React + Redux Toolkit application that tracks real-time cryptocurrency prices, simulating WebSocket updates and managing all state via Redux.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real-time Price Updates**: Prices, percentages, and volumes update every 1.5 seconds
+- **Responsive UI**: Mobile-friendly design with a clean, modern interface
+- **Redux State Management**: All state is managed using Redux Toolkit
+- **Styled Components**: Consistent styling with styled-components
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- TypeScript
+- Redux Toolkit
+- Styled Components
+- Recharts (for charts)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or later)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository
+2. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+# or
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
 
-### `npm run eject`
+```bash
+npm start
+# or
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+src/
+├── components/       # UI components
+├── services/         # Services (WebSocket simulator)
+├── store/            # Redux store
+│   └── slices/       # Redux slices
+├── utils/            # Utility functions
+└── App.tsx           # Main application component
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Features
 
-## Learn More
+- Table displaying 5 cryptocurrency assets with the following fields:
+  - # (Rank)
+  - Logo
+  - Name + Symbol
+  - Price
+  - 1h % Change
+  - 24h % Change
+  - 7d % Change
+  - Market Cap
+  - 24h Volume
+  - Circulating Supply
+  - 7-Day Chart
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Color-coded percentage changes:
+  - Green for positive changes
+  - Red for negative changes
+  - Gray for zero/no change
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Simulated WebSocket updates every 1.5 seconds
+
+## Future Enhancements
+
+- Integration with a real WebSocket API (e.g., Binance)
+- Sorting functionality for the table
+- Filtering options (top gainers, losers, etc.)
+- Detailed asset pages
+- Price history charts
+- Mobile app version
