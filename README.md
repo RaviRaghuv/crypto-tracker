@@ -87,3 +87,6 @@ src/
 - Detailed asset pages
 - Price history charts
 - Mobile app version
+
+  ## demo of project
+  ![App Screenshot](./screenshots/demo.png)
