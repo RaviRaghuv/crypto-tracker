@@ -89,6 +89,7 @@ src/
 - Mobile app version
 
   ## demo of project
-  ![App Screenshot](./screenshots/demo.png)
+![App Screenshot](./public/Screenshot%202025-04-25%20041513.png)
+
 
 
