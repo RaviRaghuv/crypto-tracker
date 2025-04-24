@@ -89,6 +89,6 @@ src/
 - Mobile app version
 
   ## demo of project
-  ![Crypto Tracker UI]([https://raw.githubusercontent.com/username/repo-name/branch-name/path/to/image.png](https://github.com/RaviRaghuv/crypto-tracker/blob/main/Screenshot%202025-04-25%20041513.png))
+  ![Crypto Tracker UI]([https://drive.google.com/uc?export=view&id=1AbCDeFG1234567](https://drive.google.com/file/d/1vguEq_UmlE6PCk6JPv-oOKeeIrGF6pYM/view?usp=sharing))
 
 
