@@ -89,6 +89,6 @@ src/
 - Mobile app version
 
   ## demo of project
-  ![Crypto Tracker UI](https://drive.google.com/file/d/1vguEq_UmlE6PCk6JPv-oOKeeIrGF6pYM/view?usp=sharing)
+  ![App Screenshot](./screenshots/demo.png)
 
 
